@@ -39,6 +39,73 @@
         .content{
             display: block;
         }
+
+        @-webkit-keyframes rotate{
+            from{-webkit-transform:rotate(0deg)}
+            to{-webkit-transform:rotate(360deg)}
+            }
+        @-moz-keyframes rotate{
+            from{-moz-transform:rotate(0deg)}
+            to{-moz-transform:rotate(360deg)}
+            }
+        @-ms-keyframes rotate{
+            from{-ms-transform:rotate(0deg)}
+            to{-ms-transform:rotate(360deg)}
+            }
+        @-o-keyframes rotate{
+            from{-o-transform:rotate(0deg)}
+            to{-o-transform:rotate(360deg)}
+            }
+
+        @-webkit-keyframes rotate-l{
+            from{-webkit-transform:rotate(360deg)}
+            to{-webkit-transform:rotate(0deg)}
+            }
+        @-moz-keyframes rotate-l{
+            from{-moz-transform:rotate(360deg)}
+            to{-moz-transform:rotate(0deg)}
+            }
+        @-ms-keyframes rotate-l{
+            from{-ms-transform:rotate(360deg)}
+            to{-ms-transform:rotate(0deg)}
+            }
+        @-o-keyframes rotate-l{
+            from{-o-transform:rotate(0deg)}
+            to{-o-transform:rotate(0deg)}
+            }
+        @-webkit-keyframes rotate-rs{
+            from{-webkit-transform:rotate(0deg)}
+            to{-webkit-transform:rotate(35deg)}
+            }
+        @-moz-keyframes rotate-rs{
+            from{-moz-transform:rotate(0deg)}
+            to{-moz-transform:rotate(35deg)}
+            }
+        @-ms-keyframes rotate-rs{
+            from{-ms-transform:rotate(0deg)}
+            to{-ms-transform:rotate(35deg)}
+            }
+        @-o-keyframes rotate-rs{
+            from{-o-transform:rotate(0deg)}
+            to{-o-transform:rotate(35deg)}
+            }
+        @-webkit-keyframes rotate-ls{
+            from{-webkit-transform:rotate(35deg)}
+            to{-webkit-transform:rotate(0deg)}
+            }
+        @-moz-keyframes rotate-ls{
+            from{-moz-transform:rotate(35deg)}
+            to{-moz-transform:rotate(0deg)}
+            }
+        @-ms-keyframes rotate-ls{
+            from{-ms-transform:rotate(35deg)}
+            to{-ms-transform:rotate(0deg)}
+            }
+        @-o-keyframes rotate-ls{
+            from{-o-transform:rotate(35deg)}
+            to{-o-transform:rotate(0deg)}
+            }
+
         .content img{
             top: 18%;
             left: 0;
@@ -48,6 +115,16 @@
             z-index: -1;
             width: 1400px;
             height: 1400px;
+        }
+        .plane img{
+            animation: 180s linear 0s infinite rotate-l;
+            -webkit-animation: 180s linear 0s infinite rotate-l;
+
+        }
+        .globe img{
+            animation: 180s linear 0s infinite rotate;
+            -webkit-animation: 180s linear 0s infinite rotate;
+        
         }
         .snowman img{
             width: 298px;
@@ -64,30 +141,72 @@
             height: 900px;
             top: 50%;
             left: 17%;
+
         }
         .slogan1 img{
             width: 841px;
             height: 883px;
             top: 57%;
             left: 20%;
+            transition:All 10s linear;
         }
+        .slogan1 img:hover{
+            transform: rotate(-55deg);
+        }
+ 
         .slogan2 img{
             width: 604px;
             height: 643px;
             top: 70%;
             left: 28%;
+            transition:All 8s linear;
+            
+        }
+        .slogan2 img:hover{
+            transform: rotate(55deg);
         }
         .mb_button img{
-            width: 180px;
-            height: 174px;
-            top: 95%;
+            width: 170px;
+            height: 165px;
+            top: 96%;
             left: 43%;
+            border-radius: 88px;
         }
         .text img{
             width: 370px;
             height: 254px;
             top: 89%;
             left: 23%;
+        }
+        @-webkit-keyframes blink{
+            0%{opacity:1;}
+            90%{opacity:0;}
+            100%{display: none;}
+        }
+        @-moz-keyframes blink{
+            0%{opacity:1;}
+            90%{opacity:0;}
+            100%{display: none;}
+        }
+        @-ms-keyframes blink{
+            0%{opacity:1;}
+            90%{opacity:0;}
+            100%{display: none;}
+        }
+        @-o-keyframes blink{
+            0%{opacity:1;}
+            90%{opacity:0;}
+            100%{display:none;}
+        }
+
+        .start img{
+            width: 105px;
+            height: 28px;
+            top: 105%;
+            left: 45%;
+            animation:blink 0.5s linear infinite;
+            -webkit-animation:blink 1s 1s linear infinite;
+             
         }
  
 
@@ -106,14 +225,15 @@
         </div>
     </div>
     <div class="content">
-        <span><img src="img/plane.png"></span>
-        <span><img src="img/globe.png"></span>
+        <span class="plane"><img src="img/plane.png"></span>
+        <span class="globe"><img src="img/globe.png"></span>
         <span class="snowman"><img src="img/snowmonsterwalk.gif"></span>
         <span class="sloganback"><img src="img/sloganback.png"></span>
         <span class="slogan1"> <img src="img/slogan1.png"> </span>
         <span class="slogan2"> <img src="img/slogan2.png"> </span>
         <span class="text"><img src="img/text.png"></span>
-        <span class="mb_button"> <img src="img/mb_button.png"> </span>
+        <span class="mb_button"> <img src="img/startbutton.png"> </span>
+        <span class="start"><img src="img/start_05.png"></span>
     </div>
 
 </body>
