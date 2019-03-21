@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9,IE=10,IE=11,IE=EDGE" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<head>
+
+ <head>
     <title>globe</title>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="all.js"></script>
@@ -10,24 +12,27 @@
     <style>
         body{
             margin: 0px;
-            width: 1430px;
-            height: 800px;
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
+
         }
         .background{
             margin: 0px;
             background-image: url("img/sky.png");
             background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
+            width: 100%;
+            height: 119%;
             top: 0;
             left: 0;
             bottom: 0;
             right: 0;
             position: absolute;
-            z-index: -1;   
+            z-index: -1;
+            align-items:center;  
+            justify-content:center;
+            overflow: hidden;  
+
         }
         .nav{
             background: black;
@@ -35,18 +40,19 @@
             height: 40px;
             margin: 0px;
             display: inline-block;
-        }
-        span img{
-            width: 113px;
-            height: 40px;
+            align-items:center;  
+            justify-content:center;
         }
         .nav a:not(:first-child){
-             float: right;
-             margin: 10px;
-             margin-right: 9px;
+            float: right;
+            margin: 10px;
+            margin-right: 9px;
+            align-items:center;  
+            justify-content:center;
         }
         .content{
             display: block;
+            overflow: hidden;
         }
 
         @-webkit-keyframes rotate{
@@ -114,16 +120,24 @@
             from{-o-transform:rotate(35deg)}
             to{-o-transform:rotate(0deg)}
             }
+ 
 
         .content img{
-            top: 18%;
+            top: 8%;
             left: 0;
             bottom: 0;
             right: 0;
             position: absolute;
             z-index: -1;
-            width: 1400px;
-            height: 1400px;
+            width: 100%;
+            height: auto;
+            background-size: 100% auto;
+            overflow: hidden;
+
+        }
+ 
+        .plane{
+            overflow: hidden;
         }
         .plane img{
             animation: 180s linear 0s infinite rotate-l;
@@ -133,59 +147,57 @@
         .globe img{
             animation: 180s linear 0s infinite rotate;
             -webkit-animation: 180s linear 0s infinite rotate;
+
         
         }
         .snowman img{
-            width: 298px;
-            height: 248px;
-            top: 21%;
-            left: 42%;
+            width: 22%;
+            height: auto;
+            top: 12%;
+            left: 43%;
             bottom: 0;
             right: 0;
             position: absolute;
             z-index: -1;
         }
+        
         .sloganback img{
-            width: 910px;
-            height: 900px;
-            top: 50%;
-            left: 17%;
-
+            width: 64%;
+            height: auto;
+            margin: 18%;
         }
+
         .slogan1 img{
-            width: 841px;
-            height: 883px;
-            top: 57%;
-            left: 20%;
-            transition:All 10s linear;
+            width: 56%;
+            height: auto;
+            transition: All 10s linear;
+            margin: 22.5%;
         }
         .slogan1 img:hover{
             transform: rotate(-55deg);
         }
  
         .slogan2 img{
-            width: 604px;
-            height: 643px;
-            top: 70%;
-            left: 28%;
-            transition:All 8s linear;
-            
+            width: 42%;
+            height: auto;
+            margin: 29%;
+            transition: All 8s linear;
+             
         }
         .slogan2 img:hover{
             transform: rotate(55deg);
         }
         .mb_button img{
-            width: 170px;
-            height: 165px;
-            top: 96%;
-            left: 43%;
+            width: 11%;
+            height: auto;
+            margin: 45%;
             border-radius: 88px;
+             
         }
         .text img{
-            width: 370px;
-            height: 254px;
-            top: 89%;
-            left: 23%;
+            width: 25%;
+            height: auto;
+            margin: 40% 2% 2% 25%;
         }
         @-webkit-keyframes blink{
             0%{opacity:1;}
@@ -209,46 +221,47 @@
         }
 
         .start img{
-            width: 105px;
-            height: 28px;
-            top: 105%;
-            left: 45%;
-            animation:blink 0.5s linear infinite;
-            -webkit-animation:blink 1s 1s linear infinite;
-             
+            width: 8%;
+            height: auto;
+            animation: blink 0.5s linear infinite;
+            -webkit-animation: blink 1s 1s linear infinite;
+            margin: 49.5% 0 0% 46.5%;
         }
-        .circle{
-            background-color: rgba(255, 255, 255, 0.8);
-            position: absolute;
-            width: 794px;
-            height: 796px;
-            border-radius: 400px;
-            left: 21%;
-            top: 57%;
+        .snowmonsterflag{
+            margin: auto 41%;
             display: none;
 
+        }
+        .circle{
+            background-color: rgba(255, 255, 255, 0.8);     
+            width: 56%;
+            height: 90%;
+            border-radius: 50%;
+            display: none;
+            margin: -1% 0 0 22%;
+            overflow: hidden;
 
         }
         .question{
             text-align: center;
             color: #3372da;
-            position: absolute;
-            top: 12%;
-            left: 7%;
             font-size: 24px;
             font-weight: 900;
             display: none;
+            margin: 14% 0% 0% 0%;
         }
     
         .answer{
             color: black;
             font-size: 20px;
+            margin: -4% 0% 0% 6%;
             
         }
         .answer p{
-            height: 30px;
-            width: 700px;
+            height: 100%;
+            max-width: 75%;
             box-sizing: border-box;
+            margin: 3% 0% 0% 9%;
         }
  
         .answer p:hover{
@@ -256,27 +269,31 @@
              
         }
         .circle img{
-            width: 210px;
-            height: 353px;
+            width: 23%;
+            height: 36%;
             position: absolute;
-            top: -48%;
-            left: 33%;
+            top: -38%;
+            left: 35%;
+            overflow: hidden;
         }
         .question2{
             text-align: center;
             color: #3372da;
-            position: absolute;
-            top: 12%;
-            left: 19%;
             font-size: 24px;
-            font-weight: 900;  
-            display: none;  
+            font-weight: 900;
+            display: none;
+            margin: 14% 0% 0% 0%;
         }
-       
-        .answer2 p{
+        .answer2 {
             color: black;
             font-size: 20px;
+            margin: -4% 0% 0% 6%;
+        }
+        .answer2 p{
+            height: 100%;
+            max-width: 75%;
             box-sizing: border-box;
+            margin: 3% 0% 0% 9%;
 
         }
 
@@ -288,88 +305,100 @@
         .question3{
             text-align: center;
             color: #3372da;
-            position: absolute;
-            top: 12%;
-            left: 13%;
             font-size: 24px;
-            font-weight: 900; 
-            display: none;   
+            font-weight: 900;
+            display: none;
+            margin: 14% 0% 0% 0%;
         }
-        .answer3 p{
+        .answer3 {
             color: black;
             font-size: 20px;
+            margin: -4% 0% 0% 6%;
+        }
+        .answer3 p{
+            height: 100%;
+            max-width: 83%;
             box-sizing: border-box;
+            margin: 3% 0% 0% 4%;
 
         }
         .answer3 p:hover{
             border: solid 1px blue;
              
         }
-       
-        .question4{
+        .question4 {
             text-align: center;
             color: #3372da;
-            position: absolute;
-            top: 12%;
-            left: 14%;
             font-size: 24px;
-            font-weight: 900;   
-            display: none; 
+            font-weight: 900;
+            display: none;
+            margin: 14% 0% 0% 0%;
         }
-      
-        .answer4 p{
+        .answer4 {
             color: black;
             font-size: 20px;
+            margin: -4% 0% 0% 6%;
+        }
+        .answer4 p{
+            height: 100%;
+            max-width: 75%;
             box-sizing: border-box;
+            margin: 3% 0% 0% 9%;
         }
         .answer4 p:hover{
             border: solid 1px blue;
-             
         }
-        .home{
+        .home img{
+            width: 7%;
+            height: auto;
+            margin: -5.5% 0% 0% 49%;
             position: absolute;
-            top: 3%;
-            left: 67%;
             
         }
-        .friday{
-            display: inline-block;
+        .homebar img{
+            width: 138%;
+            height: 47%;
+            margin-left: -18%;
+        }
+        .friday img{
+            width: 21%;
+            height: auto;
+            margin: -6% 0% 0% 69%;
             position: absolute;
-            top: 2%;
-            right: 5%;
 
         }
         .item{
             background-color: #ffd53a;
             background-size: cover;
             background-position: center;
-           /* display: none;*/
-             
+            padding-bottom: 12%;
+            display: none;
         }
        
         .building img{
-            width: 100%;
-            height: 100px;
-            margin: 4% 0 0 0;
-             
+            position: fixed;
+            top: 88%;
             
         }
         .result{
             margin-left: 15%;
         }
-        .y{
-            padding: 2% 0 1% 0;
+
+        .y img{
+            width: 80%;
+            height: auto;
+            padding-bottom: 3%;
         }
-        .y2{
-            width: 484px;
-            height: 735px;
-            display: inline-block;
+        .y2 img{
+            width: 40%;
+            height: auto;
+            margin: 0 auto;
 
         }
-        .y3{
-            width: 484px;
-            height: 735px;
-            display: inline-block;
+        .y3 img{
+            width: 39.8%;
+            height: auto;
+            margin: -61% 0% 4% 42%;
         }
         .result2{
             margin-left: 15%;
@@ -385,12 +414,90 @@
             margin-left: 15%;
             margin-top: 15%;
         }
+        .answermb img{
+            width: 50%;
+            height: 30%;
+            position: absolute;
+            top: 40%;
+            left: 23%;
+            position: fixed;
+             
+        }
+        .mobile{
+            display: none;
+        }
+        .mobileText img{
+            max-width: 100%;
+            height: auto;
+        }
+        .startmb img{
+            width: 23%;
+            height: 18%;
+            margin: -29% 0% 9% 39%;
+        }
+        .questionmb{
+            width: 100%;
+            height: 179%;
+            position: absolute;
+            background: -webkit-linear-gradient(#246cd8, #4db6f0);
+            background: -o-linear-gradient(#246cd8, #4db6f0);
+            background: -moz-linear-gradient(#246cd8, #4db6f0);
+            background: linear-gradient(#246cd8, #4db6f0);
+            opacity: 0.9;
+            margin: -183% 0% 0% 0%;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            font-weight: 900;
+            display: none;
+        } 
+
+        .q {
+            width: 82%;
+            margin: 14% 0% 0% 10%;
+        }
+        .amb {
+            margin-top: 9%;
+        }
+        .amb p{
+            margin-top: 3%;
+            font-size: 15px;
+            padding-top: 0%;
+        }
+
+
+        
+
+         
+        
+
  
 
 
     </style>
+        
 
 <body>
+    <div class="mobile">
+        <div class="mobileText">
+            <span><img src="img/mobile_text.jpg"></span>
+            <span class="startmb"><img src="img/mb_button.png"></span>
+        </div>
+        
+    </div>
+    <div class="questionmb">
+        <div> 
+            <div class="q">
+                正要啟航出發，接到一個緊急指令：想找到幸運福袋，就要先放下手中行囊，只能帶著一項寶物與你一同前往這趟冒險旅程，你要選擇哪一項寶物和你同行呢？
+            </div>
+            <div class="amb"> 
+                <p>A. 魔法筆記本，帶著它就會有奇妙的事情發生Magic~</p>
+                <p>B. 永保電力行動電源，讓你人和手機都電力飽滿！</p>
+                <p>C. 強力清潔功能香水，噴一噴就不擔心旅途上又臭又髒了</p>
+                <p>D. 比古哥還強大 “神力眼鏡”，隨身攜帶的超級電腦</p>
+            </div>
+        </div>
+    </div>
     <div class="background">
         <div class="nav">
             <span><a href="http://shopping.friday.tw/lifestyle/fresh/"><img src="img/logo-white-static.png"></a></span>
@@ -400,72 +507,74 @@
             <a href="#"><img src="img/static-nav-icon-p.png"></a>
             <a href="#"><img src="img/static-nav-icon-l.png"></a>
         </div>
-    </div>
-    <div class="content">
-        <span class="plane"><img src="img/plane.png"></span>
-        <span class="globe"><img src="img/globe.png"></span>
-        <span class="snowman"><img src="img/snowmonsterwalk.gif"></span>
-        <span class="sloganback"><img src="img/sloganback.png"></span>
-        <span class="slogan1"> <img src="img/slogan1.png"> </span>
-        <span class="slogan2"> <img src="img/slogan2.png"> </span>
-        <span class="text"><img src="img/text.png"></span>
-        <span class="mb_button"> <img src="img/startbutton.png"> </span>
-        <span class="start"><img src="img/start_05.png"></span>
-    </div>
-    <div class="circle">
-        <div><img src="img/snowmonsterflag.png"></div>
-        <div class="question">
-            <p>1. 準備好要出發了！</p>
-            <p>喔等等…你有先想好新一年旅程要往哪裡去嗎？</p><br>
-            <div class="answer"> 
-                <p>A. 我要到外太空找尋傳說中的外星人 @&$)^#(%_@#)</p>
-                <p>B. 太冷了，我要到澳洲海灘曬太陽 (拿出比基尼)</p>
-                <p>C. 想帶雪怪回北歐家鄉找家人團圓 (人真好… 已哭)</p>
-                <p>D. 新一年要從零開始！決定回家吃飽睡飽再說… (ㄟ犯規吧)</p>
-            </div>
+     
+        <div class="content">
+            <span class="plane"><img src="img/plane.png"></span>
+            <span class="globe"><img src="img/globe.png"></span>
+            <span class="snowman"><img src="img/snowmonsterwalk.gif"></span>
+            <span class="sloganback"><img src="img/sloganback.png"></span>
+            <span class="slogan1"> <img src="img/slogan1.png"> </span>
+            <span class="slogan2"> <img src="img/slogan2.png"> </span>
+            <span class="text"><img src="img/text.png"></span>
+            <span class="mb_button"> <img src="img/startbutton.png"> </span>
+            <span class="start"><img src="img/start_05.png"></span>
         </div>
-        <div class="question2">
-            <p>2. 選好地點後， </p>
-            <p>決定一下要用什麼交通工具開始這個嶄新旅程吧！</p><br>
-            <div class="answer2"> 
-                <p>A. 不只有 You bike, Me bike too…</p>
-                <p>B. 雙腳萬能，我要走出自己一片天 (遠目)</p>
-                <p>C. 天冷了，上車吧！哥開跑車…</p>
-                <p>D. 別開玩笑了，我要用飛的 123 Go ~</p>
+     
+        <div class="snowmonsterflag"><img src="img/snowmonsterflag.png"></div>
+        <div class="circle">
+            <div class="question">
+                <p>1. 準備好要出發了！</p>
+                <p>喔等等…你有先想好新一年旅程要往哪裡去嗎？</p><br>
+                <div class="answer"> 
+                    <p>A. 我要到外太空找尋傳說中的外星人 @&$)^#(%_@#)</p>
+                    <p>B. 太冷了，我要到澳洲海灘曬太陽 (拿出比基尼)</p>
+                    <p>C. 想帶雪怪回北歐家鄉找家人團圓 (人真好… 已哭)</p>
+                    <p>D. 新一年要從零開始！決定回家吃飽睡飽再說… (ㄟ犯規吧)</p>
+                </div>
             </div>
-        </div>
-        <div class="question3">
-            <p>3. 出發前，天外傳來好消息指出：</p>
-            <p>今年的旅程人人都可以帶一位得力助手伴遊喔！</p><br>
-            <div class="answer3"> 
-                <p>A. 就是你了～多啦A夢，有了百寶袋我什麼都不缺</p>
-                <p>B. 諸葛亮，有首腦陪伴，任何挑戰都迎刃而解</p>
-                <p>C. TARS 機器人，幽默又會變身，是人類最新好的朋友 (狗狗哭哭惹)</p>
-                <p>D. 我很誠實，我只想要正妹 / 帥哥的陪伴！(羞)</p>
+            <div class="question2">
+                <p>2. 選好地點後， </p>
+                <p>決定一下要用什麼交通工具開始這個嶄新旅程吧！</p><br>
+                <div class="answer2"> 
+                    <p>A. 不只有 You bike, Me bike too…</p>
+                    <p>B. 雙腳萬能，我要走出自己一片天 (遠目)</p>
+                    <p>C. 天冷了，上車吧！哥開跑車…</p>
+                    <p>D. 別開玩笑了，我要用飛的 123 Go ~</p>
+                </div>
             </div>
-        </div>
-        <div class="question4">
-            <p>4. 喔喔！出發前最後一秒，發現行李超載了（驚），</p>
-            <p>準備淘汰行囊，先挑出一定不可淘汰的旅遊必備傢伙。</p><br>
-            <div class="answer4"> 
-                <p>A. 魔法筆記本，帶著它就會有奇妙的事情發生Magic~</p>
-                <p>B. 永保電力行動電源，讓你人和手機都電力飽滿！</p>
-                <p>C. 強力清潔功能香水，噴一噴就不擔心旅途上又臭又髒了</p>
-                <p>D. 比古哥還強大 “神力眼鏡”，隨身攜帶的超級電腦</p>
+            <div class="question3">
+                <p>3. 出發前，天外傳來好消息指出：</p>
+                <p>今年的旅程人人都可以帶一位得力助手伴遊喔！</p><br>
+                <div class="answer3"> 
+                    <p>A. 就是你了～多啦A夢，有了百寶袋我什麼都不缺</p>
+                    <p>B. 諸葛亮，有首腦陪伴，任何挑戰都迎刃而解</p>
+                    <p>C. TARS 機器人，幽默又會變身，是人類最新好的朋友 (狗狗哭哭惹)</p>
+                    <p>D. 我很誠實，我只想要正妹 / 帥哥的陪伴！(羞)</p>
+                </div>
             </div>
-        </div>
+            <div class="question4">
+                <p>4. 喔喔！出發前最後一秒，發現行李超載了（驚），</p>
+                <p>準備淘汰行囊，先挑出一定不可淘汰的旅遊必備傢伙。</p><br>
+                <div class="answer4"> 
+                    <p>A. 魔法筆記本，帶著它就會有奇妙的事情發生Magic~</p>
+                    <p>B. 永保電力行動電源，讓你人和手機都電力飽滿！</p>
+                    <p>C. 強力清潔功能香水，噴一噴就不擔心旅途上又臭又髒了</p>
+                    <p>D. 比古哥還強大 “神力眼鏡”，隨身攜帶的超級電腦</p>
+                </div>
+            </div>
 
+        </div>
     </div>
          
     <div class="item"> 
-        <div class="homebar"><img src="img/homebar.png"></div>
-        <div class="home"><img src="img/home.png"></div>
-        <div class="friday"><img src="img/backfriday.png"></div>
+        <span class="homebar"><img src="img/homebar.png"></span>
+        <span class="home"><img src="img/home.png"></span>
+        <span class="friday"><img src="img/backfriday.png"></span>
         
         <div class="result">     
-            <div class="y"><img src="img/g.png"></div>
-            <div class="y2"><img src="img/y2.png"></div>
-            <div class="y3"><img src="img/y3.png"></div>    
+            <span class="y"><img src="img/g.png"></span> 
+            <span class="y2"><img src="img/y2.png"></span> 
+            <span class="y3"><img src="img/y3.png"></span>     
         </div>
         <div class="result2">     
             <div class="y"><img src="img/y.png"></div>
@@ -482,9 +591,11 @@
             <div class="y2"><img src="img/B2.png"></div>
             <div class="y3"><img src="img/B3.png"></div> 
         </div>
+        <div class="answermb"><img src="img/answer_mb.png"></div>
 
         <div class="building"><img src="img/building.png"></div>
     </div>
+ 
 
 </body>
 </html>
