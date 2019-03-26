@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>可不可以不上班</title>
+</head>
+<style>
+    body{
+        margin:0 auto;
+    }
+    .main{
+        width: 100%
+        height: auto;
+        overflow: hidden;
+
+    }
+    .main img{
+        width: 131%;
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0% 0% 0% -16%;
+         
+    }
+    @-webkit-keyframes blink{
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 1;
+        }
+        51% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @-moz-keyframes blink{
+         0% {
+        opacity: 1;
+        }
+        50% {
+            opacity: 1;
+        }
+        51% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @-ms-keyframes blink{
+        0% {
+        opacity: 1;
+        }
+        50% {
+            opacity: 1;
+        }
+        51% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }    
+    }
+    @-o-keyframes blink{
+        0% {
+        opacity: 1;
+        }
+        50% {
+            opacity: 1;
+        }
+        51% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .clock_yellow img{
+        width: 45%;
+        height: auto;
+        position: absolute;
+        top: 7%;
+        left: 43%;
+         
+    }
+
+    .clock_blue img{
+        width: 45%;
+        height: auto;
+        position: absolute;
+        top: 7%;
+        left: 43%;
+        animation: blink 1.2s linear;
+        -webkit-animation: 1.2s linear 0.5s infinite blink;
+    }
+
+
+
+
+
+</style>
+<body>
+    <div class="main">
+        <img src="img/top_bg.jpg">
+        <div class="clock_yellow"><img src="img/choose_top_02.png"></div>
+        <div class="clock_blue"><img src="img/choose_top_01.png"></div>
+        
+    </div>
+
+</body>
+</html>
