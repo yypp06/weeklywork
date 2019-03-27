@@ -2,6 +2,8 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="main.js"></script>
     <title>可不可以不上班</title>
 </head>
 <style>
@@ -79,24 +81,42 @@
         }
     }
 
-    .clock_yellow img{
+    .clock_yellow img, .clock_blue img {
         width: 45%;
         height: auto;
         position: absolute;
         top: 7%;
         left: 43%;
+        display: block;
          
     }
 
     .clock_blue img{
-        width: 45%;
+        animation: blink 1.2s linear;
+        animation: 1.2s linear 0.5s infinite blink;
+    }
+    .clock_blue img:hover{
+        animation-play-state: paused;
+    }
+    
+    .clock_yes img, .clock_no img{
+        width: 22.5%;
         height: auto;
         position: absolute;
+        display: none;
+    }
+    .clock_yes img{
         top: 7%;
         left: 43%;
-        animation: blink 1.2s linear;
-        -webkit-animation: 1.2s linear 0.5s infinite blink;
     }
+    .clock_no img{
+        top: 7.05%;
+        left: 65.5%;
+    }
+     
+
+
+ 
 
 
 
@@ -108,7 +128,9 @@
         <img src="img/top_bg.jpg">
         <div class="clock_yellow"><img src="img/choose_top_02.png"></div>
         <div class="clock_blue"><img src="img/choose_top_01.png"></div>
-        
+        <div class="clock_yes"><img src="img/choose_top_yes.png"></div>
+        <div class="clock_no"><img src="img/choose_top_no.png"></div>
+
     </div>
 
 </body>
