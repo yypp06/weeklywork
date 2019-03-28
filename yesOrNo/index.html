@@ -95,9 +95,6 @@
         animation: blink 1.2s linear;
         animation: 1.2s linear 0.5s infinite blink;
     }
-    .clock_blue img:hover{
-        animation-play-state: paused;
-    }
     
     .clock_yes img, .clock_no img{
         width: 22.5%;
@@ -110,14 +107,62 @@
         left: 43%;
     }
     .clock_no img{
-        top: 7.05%;
+        top: 7%;
         left: 65.5%;
     }
-     
 
+    .cover{
+        width: 101%;
+        height: 78%;
+        position: absolute;
+        left: -1%;
+        top: 0%;
+        display: -webkit-inline-box;
+    }
+    .mancover{
+        background-color: #2bb7c9;
+        width: 50%;
+        height: 1180px;
+        opacity: 0.4;
+    }
+    .girlcover{
+        background-color: #fdd727;
+        width: 50%;
+        height: 1180px;
+        opacity: 0.4;
+    }
 
- 
-
+    .yes_cover{
+        width: 322px;
+        height: 637px;
+        border-radius: 100% 0 0 100%/50%;
+        background-color: red;
+        margin: -78% 0% 0% 27%;
+        position: absolute;
+        opacity: 0;
+    }
+    .no_cover{
+        width: 322px;
+        height: 637px;
+        border-radius: 0% 200% 200% 0%/100%;
+        background-color: red;
+        margin: -78% 0% 0% 49%;
+        position: absolute;
+        opacity: 0;
+    }
+    .mainWord{
+        text-align: center;
+        font-size: 24px;
+        font-weight: 900;
+        margin: -32% 0% 0% 35.5%;
+        position: absolute;
+    }
+    .mainWord p{
+        height: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        color: white;
+    }
 
 
 
@@ -126,12 +171,24 @@
 <body>
     <div class="main">
         <img src="img/top_bg.jpg">
+        <div class="cover"> 
+            <div class="girlcover"></div>
+            <div class="mancover"></div>
+        </div>
         <div class="clock_yellow"><img src="img/choose_top_02.png"></div>
         <div class="clock_blue"><img src="img/choose_top_01.png"></div>
         <div class="clock_yes"><img src="img/choose_top_yes.png"></div>
         <div class="clock_no"><img src="img/choose_top_no.png"></div>
-
+        <div class="yes_cover"></div>
+        <div class="no_cover"></div>
+        <div class="mainWord">
+            <p>每個人心中都有一個必須工作的理由<br>
+                在解開成就的那一天來臨之前<br>
+                我們都在困頓中掙扎，在摸索跟學習中<br>
+                看見真正的自己
+            </p>
+        </div>
     </div>
-
+ 
 </body>
 </html>
