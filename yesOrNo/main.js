@@ -1,4 +1,4 @@
-
+ 
 $(document).ready(function(){
     
     $(".yes_cover").hover(function(){
@@ -28,16 +28,6 @@ $(document).ready(function(){
      
 
         
-     
-
-
-
-
-
-
-
-
-
 
 
 
