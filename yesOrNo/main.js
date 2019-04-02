@@ -53,6 +53,7 @@ $(document).ready(function(){
             else if(thisTop > top2) {
                 $('.btn3_3').css({opacity:'0'});
                 $('.btn2_2').css({opacity:'1'});
+                
             }
     
 
