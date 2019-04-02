@@ -1,4 +1,3 @@
- 
 $(document).ready(function(){
     
     $(".yes_cover").hover(function(){
@@ -43,8 +42,8 @@ $(document).ready(function(){
     }
     $(window).scroll(function () {
         var thisTop = $(this).scrollTop();
-        var top1 = $('.suitcase img').offset().top;
-        var top2 = $('.clothes img').offset().top - 110;
+        var top1 = $('.suitcase').offset().top;
+        var top2 = $('.clothes').offset().top - 110;
          
         if(thisTop > top1 && thisTop < top2) {
             $('.btn2_2').css({opacity:'0'});
@@ -68,3 +67,11 @@ $(document).ready(function(){
 
 
 });
+     
+
+        
+
+
+
+
+ 

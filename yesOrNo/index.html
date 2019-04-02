@@ -7,7 +7,8 @@
     <title>可不可以不上班</title>
 </head>
 <style>
-    body{
+  
+    body {
         margin:0 auto;
     }
     .main{
@@ -164,40 +165,47 @@
         box-sizing: border-box;
         color: white;
     }
-    .restPage div{
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-    }
+
 
     .restPage{
-        background: url(img/yes_bg_02.jpg);
+        background-image: url(img/yes_bg_02.jpg);
+        background-attachment: fixed;
         width: 100%;
-        height: 1400px;
+        height: auto;
         background-repeat: no-repeat;
-        padding: 0px 11% 21% 5%;
-        margin: 0 0 0 -5%;
-        background-position: center;  
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
 
     }
-    .suitcase img{
-        width: 132%;
-        height: auto;
-        position: absolute;  
-        margin: 0% 0% 0% -15%;
-
+    .suitcase{
+        background-image: url(img/yes_bg_01.jpg);
+        width: 1440px;
+        height: 1030px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+         
     }
-    .tips img{     
-        width: 130%;
-        height: auto;
-        margin: 74% 0% 0% -15%;
-        position: absolute;
+    .tips {   
+        background-image: url(img/yes_topic02.png);
+        width: 131%;
+        height: 413px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 0 0 -16%;
+         
     }
-    .clothes img{
-        width: 132%;
-        height: auto;
-        position: absolute;
-        margin-top: 100%;
+    .clothes{
+        background-image: url(img/yes_bg_03.jpg);
+        width: 100%;
+        height: 672px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+}
+         
     }
      
     .btn1{
@@ -302,10 +310,9 @@
         </div>
     </div>
     <div class="restPage">
-        <div class="rpbg"> </div>
-        <div class="suitcase"><img src="img/yes_bg_01.jpg"></div>
-        <div class="tips"><img src="img/yes_topic02.png"></div>
-        <div class="clothes"><img src="img/yes_bg_03.jpg"></div>
+        <div class="suitcase"> </div>
+        <div class="tips"> </div>
+        <div class="clothes"></div>
         <div class="btm">
             <span class="btn1"> </span>
             <span class="btn1_1"> </span>
