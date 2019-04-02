@@ -24,7 +24,40 @@ $(document).ready(function(){
         
        
     });
-  
+    $(".btn2_2").click(function(){
+        $("html,body").animate({scrollTop:$('.restPage').offset().top},800);
+        $(".btn2_2").css("opacity", "0");
+        $(".btn3_3").css("opacity", "1");
+    });
+    $(".btn3_3").click(function(){
+        $("html,body").animate({scrollTop:$('.clothes').offset().top},800);
+        $(".btn2_2").css("opacity", "1");
+        $(".btn3_3").css("opacity", "0");
+    });
+    
+
+
+    function scrollToAnchor(el){
+        var top = $(el).offset().top;
+        $('html,body').animate({scrollTop: top},'slow');
+    }
+    $(window).scroll(function () {
+        var thisTop = $(this).scrollTop();
+        var top1 = $('.suitcase img').offset().top;
+        var top2 = $('.clothes img').offset().top - 110;
+         
+        if(thisTop > top1 && thisTop < top2) {
+            $('.btn2_2').css({opacity:'0'});
+            $('.btn3_3').css({opacity:'1'});
+        }
+            else if(thisTop > top2) {
+                $('.btn3_3').css({opacity:'0'});
+                $('.btn2_2').css({opacity:'1'});
+            }
+    
+
+        
+    });
      
 
         

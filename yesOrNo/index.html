@@ -169,6 +169,12 @@
         height: auto;
         overflow: hidden;
     }
+    .item{
+        width: 300px;
+        height: 300px;
+        background-color: black;
+        margin: 0% 0 0 2%;
+    }   
     .rpbg img{
         width: 120%;
         height: auto;
@@ -193,17 +199,81 @@
         position: absolute;
         margin-top: -20%;
     }
-    .btm img{
+     
+    .btn1{
+        background: url(img/yes_tab_01_1.png);
+        width: 200px;
+        background-repeat: no-repeat;
+        height: 200px;
         position: fixed;
-        top: 2%;
-
+        top: 5%;
+        left: 90%;
     }
-    .test{
-        background: url(img/yes_tab_04.png);
+    .btn1_1{
+        background: url(img/yes_tab_01.png);
+        width: 200px;
+        background-repeat: no-repeat;
+        height: 200px;
         position: fixed;
-        top: 2%;
-        width: 400px;
-        height: auto;
+        top: 5%;
+        left: 90%;
+    }
+    .btn1_1:hover, .btn2_2:hover, .btn3_3:hover , .btn4_4:hover{
+        opacity: 0;
+    }
+    .btn2 {
+        background: url(img/yes_tab_02_1.png);
+        width: 200px;
+        background-repeat: no-repeat;
+        height: 200px;
+        position: fixed;
+        top: 17%;
+        left: 90%;
+    }
+    .btn2_2 {
+        background: url(img/yes_tab_02.png);
+        width: 200px;
+        background-repeat: no-repeat;
+        height: 200px;
+        position: fixed;
+        top: 17%;
+        left: 90%;
+    }
+    .btn3 {
+        background: url(img/yes_tab_03_1.png);
+        width: 200px;
+        background-repeat: no-repeat;
+        height: 200px;
+        position: fixed;
+        top: 29%;
+        left: 90%;
+    }
+    .btn3_3 {
+        background: url(img/yes_tab_03.png);
+        width: 200px;
+        background-repeat: no-repeat;
+        height: 200px;
+        position: fixed;
+        top: 29%;
+        left: 90%;
+    }
+    .btn4 {
+        background: url(img/yes_tab_04_1.png);
+        width: 200px;
+        background-repeat: no-repeat;
+        height: 200px;
+        position: fixed;
+        top: 41%;
+        left: 90%;
+    }
+    .btn4_4 {
+        background: url(img/yes_tab_04.png);
+        width: 200px;
+        background-repeat: no-repeat;
+        height: 200px;
+        position: fixed;
+        top: 41%;
+        left: 90%;
     }
 
 
@@ -233,18 +303,19 @@
     </div>
     <div class="restPage">
         <div class="rpbg"><img src="img/yes_bg_02.jpg"></div>
+        <div class="item"></div>
         <div class="suitcase"><img src="img/yes_bg_01.jpg"></div>
         <div class="tips"><img src="img/yes_topic02.png"></div>
         <div class="clothes"><img src="img/yes_bg_03.jpg"></div>
         <div class="btm">
-            <img src="img/yes_tab_01_1.png">
-            <img src="img/yes_tab_01.png">
-            <img src="img/yes_tab_02_1.png">
-            <img src="img/yes_tab_02.png">
-            <img src="img/yes_tab_03_1.png">
-            <img src="img/yes_tab_03.png">
-            <img src="img/yes_tab_04_1.png">
-            <img src="img/yes_tab_04.png">
+            <span class="btn1"> </span>
+            <span class="btn1_1"> </span>
+            <span class="btn2"> </span>
+            <span class="btn2_2"> </span>
+            <span class="btn3"> </span>
+            <span class="btn3_3"> </span>
+            <span class="btn4"> </span>
+            <span class="btn4_4"> </span>
         </div>
     </div>
     <div class="workPage"></div>
