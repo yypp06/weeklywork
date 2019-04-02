@@ -23,18 +23,6 @@ $(document).ready(function(){
         
        
     });
-    $(".btn2_2").click(function(){
-        $("html,body").animate({scrollTop:$('.restPage').offset().top},800);
-        $(".btn2_2").css("opacity", "0");
-        $(".btn3_3").css("opacity", "1");
-    });
-    $(".btn3_3").click(function(){
-        $("html,body").animate({scrollTop:$('.clothes').offset().top},800);
-        $(".btn2_2").css("opacity", "1");
-        $(".btn3_3").css("opacity", "0");
-    });
-    
-
 
     function scrollToAnchor(el){
         var top = $(el).offset().top;
@@ -54,10 +42,19 @@ $(document).ready(function(){
                 $('.btn2_2').css({opacity:'1'});
                 
             }
-    
+     });
 
-        
+    $(".btn2_2").click(function(){
+        $("html,body").animate({scrollTop:$('.restPage').offset().top},800);
+        $(".btn2_2").css("opacity", "0");
+        $(".btn3_3").css("opacity", "1");
     });
+    $(".btn3_3").click(function(){
+        $("html,body").animate({scrollTop:$('.clothes').offset().top},800);
+        $(".btn2_2").css("opacity", "1");
+        $(".btn3_3").css("opacity", "0");
+    });
+    
      
 
         
