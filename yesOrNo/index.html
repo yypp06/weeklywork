@@ -169,13 +169,12 @@
 
     .restPage{
         background-image: url(img/yes_bg_02.jpg);
-        background-attachment: fixed;
+        background-position: center;
         width: 100%;
         height: auto;
         background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         overflow: hidden;
+        background-attachment:fixed;
 
     }
     .suitcase{
@@ -216,7 +215,10 @@
         position: absolute;
         margin: 57% 0 0 22%;
         border: 6px solid #b4eaff;
-        transition: width 2s ease-out 2s;
+        -webkit-transition:background-position .5s ease-in;
+        -moz-transition:background-position .5s ease-in;
+        -0-transition:background-position .5s ease-in;
+         
     }
      
     .picnic{
@@ -230,7 +232,9 @@
         position: absolute;
         margin: 57% 0 0 52%;
         border: 6px solid #b4eaff;
-         
+        -webkit-transition:background-position .5s ease-in;
+        -moz-transition:background-position .5s ease-in;
+        -0-transition:background-position .5s ease-in; 
 
     }
     .orange{
@@ -244,6 +248,9 @@
         position: absolute;
         margin: 57% 0 0 37%;
         border: 6px solid #b4eaff;
+        -webkit-transition:background-position .5s ease-in;
+        -moz-transition:background-position .5s ease-in;
+        -0-transition:background-position .5s ease-in;
     }
     .camera{
         background: url(img/bg.png);
@@ -256,10 +263,14 @@
         position: absolute;
         margin: 57% 0 0 67%;
         border: 6px solid #b4eaff;
+        -webkit-transition:background-position .5s ease-in;
+        -moz-transition:background-position .5s ease-in;
+        -0-transition:background-position .5s ease-in;
     }
 
-    .manager:hover{
-        background-size: cover;
+    .manager:hover, .picnic:hover, .orange:hover, .camera:hover{
+        background-position : 50% 85%;
+        
     }
 
      
@@ -338,6 +349,12 @@
         top: 41%;
         left: 90%;
     }
+    .suitcase p{
+        color: white;
+        margin-top: 58%;
+        font-size: 14px;
+        text-align: center;
+    }
 
 
 
@@ -366,10 +383,10 @@
     </div>
     <div class="restPage">
         <div class="suitcase"> 
-            <div class="manager"></div>
-            <div class="picnic"></div>
-            <div class="orange"></div>
-            <div class="camera"></div>
+            <div class="manager"><img src="img/yes_circle168x168_01.png"></div>
+            <div class="picnic"><img src="img/yes_circle168x168_02.png"></div>
+            <div class="orange"><img src="img/yes_circle168x168_03.png"></div>
+            <div class="camera"><img src="img/yes_circle168x168_04.png"></div>
         </div>
         <div class="tips"> </div>
         <div class="clothes"></div>

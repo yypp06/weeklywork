@@ -30,29 +30,34 @@ $(document).ready(function(){
     }
     $(window).scroll(function () {
         var thisTop = $(this).scrollTop();
-        var top1 = $('.suitcase').offset().top;
-        var top2 = $('.clothes').offset().top - 110;
+        var top1 = $('div .suitcase').offset().top;
+        var top2 = $('.clothes').offset().top - 470;
          
         if(thisTop > top1 && thisTop < top2) {
-            $('.btn2_2').css({opacity:'0'});
-            $('.btn3_3').css({opacity:'1'});
+            $('.btn2_2').hide();
+            $('.btn3_3').show();
+            $('.restPage').css('background-position', 'center');
+            $('.restPage').css({'background-attachment':'fixed'});
+
         }
             else if(thisTop > top2) {
-                $('.btn3_3').css({opacity:'0'});
-                $('.btn2_2').css({opacity:'1'});
+                $('.btn3_3').hide();
+                $('.btn2_2').show();
+                $('.restPage').css('background-position', '50% 206%');
+                $('.restPage').css({'background-attachment':'scroll'});
                 
             }
      });
 
     $(".btn2_2").click(function(){
         $("html,body").animate({scrollTop:$('.restPage').offset().top},800);
-        $(".btn2_2").css("opacity", "0");
-        $(".btn3_3").css("opacity", "1");
+        $(".btn2_2").hide();
+        $(".btn3_3").show();
     });
     $(".btn3_3").click(function(){
         $("html,body").animate({scrollTop:$('.clothes').offset().top},800);
-        $(".btn2_2").css("opacity", "1");
-        $(".btn3_3").css("opacity", "0");
+        $(".btn2_2").show();
+        $(".btn3_3").hide();
     });
     
      
