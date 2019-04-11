@@ -60,6 +60,24 @@ $(document).ready(function(){
         $(".btn3_3").hide();
     });
     
+
+
+    $(".shoes1").click(function(){                      
+        $(".shoes_viewpo img").attr("src","img/clothes/shoes_L1.png");  
+        $(".shoes1").toggleClass("opacity","1");     
+    });
+    $(".shoes2").click(function(){                      
+        $(".shoes_viewpo img").attr("src","img/clothes/shoes_L2.png");       
+    });
+    $(".shoes3").click(function(){                      
+        $(".shoes_viewpo img").attr("src","img/clothes/shoes_L3.png");       
+    });
+    $(".shoes4").click(function(){                      
+        $(".shoes_viewpo img").attr("src","img/clothes/shoes_L4.png");       
+    });
+    $(".shoes5").click(function(){                      
+        $(".shoes_viewpo img").attr("src","img/clothes/shoes_L5.png");       
+    });
      
 
         

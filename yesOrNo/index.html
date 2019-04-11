@@ -186,8 +186,13 @@
         background-size: cover;
          
     }
+    .adVideo iframe{
+        position: absolute;
+        margin: 5% 0 0 63%;
+    }
     .tips {   
         background-image: url(img/yes_topic02.png);
+        background-color: rgba(107, 214, 255, 0.45);
         width: 131%;
         height: 413px;
         background-size: contain;
@@ -349,11 +354,54 @@
         top: 41%;
         left: 90%;
     }
-    .suitcase p{
-        color: white;
-        margin-top: 58%;
-        font-size: 14px;
-        text-align: center;
+    .contain {
+        width: 600px;
+        height: 578px;
+        background-color: white;
+        position: absolute;
+        margin: 3% 0 0 29%;
+    }
+    .shoes_viewpo{
+        width: 288px;
+        height: 560px;
+        background-color: rgba(222, 222, 239, 0.28);
+        margin: 2% 0 0 2%;
+        position: absolute;
+    }
+    .clothes_viewpo{
+        width: 292px;
+        height: 560px;
+        background-color: rgba(222, 222, 239, 0.28);
+        margin: 2% 0 0 50%;
+        position: absolute;
+    }
+    .shoes {
+        margin: 1% 0 0 20%;
+        position: absolute;
+    }
+    .shoes div{
+        margin-top: 28%;
+    }
+    .clothes_item {
+        margin: 1% 0 0 73%;
+        position: absolute;
+    }
+    .clothes_item div{
+        margin-top: 28%;
+    }
+    .shoes1, .shoes2, .shoes3, .shoes4, .shoes5, .clothes_item1, .clothes_item2, .clothes_item3, .clothes_item4, .clothes_item5{
+        width: 95px;
+        height: 95px;
+        opacity: 0.6;
+    }
+    .shoes1:hover, .shoes2:hover, .shoes3:hover, .shoes4:hover, .shoes5:hover, .clothes_item1:hover, .clothes_item2:hover, .clothes_item3:hover, .clothes_item4:hover, .clothes_item5:hover{
+        opacity: 1;
+    }
+    .shoes_viewpo img{
+        margin: -11% 0 0 20%;
+    }
+    .clothes_viewpo img{
+        margin: 1% 0 0 -22%; 
     }
 
 
@@ -382,14 +430,34 @@
         </div>
     </div>
     <div class="restPage">
-        <div class="suitcase"> 
+        <div class="suitcase">
+            <div class="adVideo"><iframe width="325" height="183" src="https://www.youtube.com/embed/IZ58M1sAaWY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> 
             <div class="manager"><img src="img/yes_circle168x168_01.png"></div>
             <div class="picnic"><img src="img/yes_circle168x168_02.png"></div>
             <div class="orange"><img src="img/yes_circle168x168_03.png"></div>
             <div class="camera"><img src="img/yes_circle168x168_04.png"></div>
         </div>
         <div class="tips"> </div>
-        <div class="clothes"></div>
+        <div class="clothes">
+            <div class="contain">
+                <div class="shoes_viewpo"><img src="img/clothes/shoes_L1.png"></div>
+                <div class="clothes_viewpo"><img src="img/clothes/clothes_L1.png"></div>
+            </div>
+            <div class="shoes">
+                <div class="shoes1"><img src="img/clothes/shoes_s1.png"></div>
+                <div class="shoes2"><img src="img/clothes/shoes_s2.png"></div>
+                <div class="shoes3"><img src="img/clothes/shoes_s3.png"></div>
+                <div class="shoes4"><img src="img/clothes/shoes_s4.png"></div>
+                <div class="shoes5"><img src="img/clothes/shoes_s5.png"></div>
+            </div>
+            <div class="clothes_item">
+                <div class="clothes_item1"><img src="img/clothes/clothes_s1.png"></div>
+                <div class="clothes_item2"><img src="img/clothes/clothes_s2.png"></div>
+                <div class="clothes_item3"><img src="img/clothes/clothes_s3.png"></div>
+                <div class="clothes_item4"><img src="img/clothes/clothes_s4.png"></div>
+                <div class="clothes_item5"><img src="img/clothes/clothes_s5.png"></div>
+            </div>
+        </div>
         <div class="btm">
             <span class="btn1"> </span>
             <span class="btn1_1"> </span>
