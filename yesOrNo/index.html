@@ -376,25 +376,23 @@
         position: absolute;
     }
     .shoes {
-        margin: 1% 0 0 20%;
+        margin: 1.5% 0 0 20%;
         position: absolute;
     }
-    .shoes div{
-        margin-top: 28%;
+    .shoes div, .clothes_item div{
+        margin-top: 22%;
     }
     .clothes_item {
-        margin: 1% 0 0 73%;
+        margin: 1.5% 0 0 73%;
         position: absolute;
     }
-    .clothes_item div{
-        margin-top: 28%;
-    }
-    .shoes1, .shoes2, .shoes3, .shoes4, .shoes5, .clothes_item1, .clothes_item2, .clothes_item3, .clothes_item4, .clothes_item5{
+
+    .shoes img, .clothes_item img{
         width: 95px;
         height: 95px;
         opacity: 0.6;
     }
-    .shoes1:hover, .shoes2:hover, .shoes3:hover, .shoes4:hover, .shoes5:hover, .clothes_item1:hover, .clothes_item2:hover, .clothes_item3:hover, .clothes_item4:hover, .clothes_item5:hover{
+    #shoes1 img:hover, #shoes2 img:hover, #shoes3 img:hover, #shoes4 img:hover, #shoes5 img:hover, #clothes_item1 img:hover, #clothes_item2 img:hover, #clothes_item3 img:hover, #clothes_item4 img:hover, #clothes_item5 img:hover{
         opacity: 1;
     }
     .shoes_viewpo img{
@@ -402,8 +400,25 @@
     }
     .clothes_viewpo img{
         margin: 1% 0 0 -22%; 
-    }
 
+    }
+    .active img {
+        opacity: 1;
+    }
+    .tag div{
+        background-image: url(img/plus_b.png);
+        background-repeat: no-repeat;
+        width: 137px;
+        height: 33px;
+        position: absolute;
+        margin: 15% 0 0 43%;
+    }
+    .tag img{
+        margin: -100% 0 0 0%;
+        position: absolute;
+        /*display: none;*/
+    }
+ 
 
 
 
@@ -444,18 +459,25 @@
                 <div class="clothes_viewpo"><img src="img/clothes/clothes_L1.png"></div>
             </div>
             <div class="shoes">
-                <div class="shoes1"><img src="img/clothes/shoes_s1.png"></div>
-                <div class="shoes2"><img src="img/clothes/shoes_s2.png"></div>
-                <div class="shoes3"><img src="img/clothes/shoes_s3.png"></div>
-                <div class="shoes4"><img src="img/clothes/shoes_s4.png"></div>
-                <div class="shoes5"><img src="img/clothes/shoes_s5.png"></div>
+                <div id="shoes1" class="active"><img src="img/clothes/shoes_s1.png"></div>
+                <div id="shoes2"><img src="img/clothes/shoes_s2.png"></div>
+                <div id="shoes3"><img src="img/clothes/shoes_s3.png"></div>
+                <div id="shoes4"><img src="img/clothes/shoes_s4.png"></div>
+                <div id="shoes5"><img src="img/clothes/shoes_s5.png"></div>
             </div>
             <div class="clothes_item">
-                <div class="clothes_item1"><img src="img/clothes/clothes_s1.png"></div>
-                <div class="clothes_item2"><img src="img/clothes/clothes_s2.png"></div>
-                <div class="clothes_item3"><img src="img/clothes/clothes_s3.png"></div>
-                <div class="clothes_item4"><img src="img/clothes/clothes_s4.png"></div>
-                <div class="clothes_item5"><img src="img/clothes/clothes_s5.png"></div>
+                <div id="clothes_item1" class="active"><img src="img/clothes/clothes_s1.png"></div>
+                <div id="clothes_item2"><img src="img/clothes/clothes_s2.png"></div>
+                <div id="clothes_item3"><img src="img/clothes/clothes_s3.png"></div>
+                <div id="clothes_item4"><img src="img/clothes/clothes_s4.png"></div>
+                <div id="clothes_item5"><img src="img/clothes/clothes_s5.png"></div>
+            </div>
+            <div class="tag">
+                <div class="sc1"><img src="img/frame.png"></div>
+          <!--       <div class="sc1_2"><img src=""></div>
+                <div class="sc2"><img src=""></div>
+                <div class="sc2_1"><img src=""></div>
+                <div class="sc3"><img src=""></div> -->
             </div>
         </div>
         <div class="btm">

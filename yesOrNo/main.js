@@ -61,23 +61,65 @@ $(document).ready(function(){
     });
     
 
+     
 
-    $(".shoes1").click(function(){                      
-        $(".shoes_viewpo img").attr("src","img/clothes/shoes_L1.png");  
-        $(".shoes1").toggleClass("opacity","1");     
+    $(".shoes").on("click", '#shoes1, #shoes2, #shoes3, #shoes4, #shoes5', function () {
+        let idName = this.getAttribute('id');
+        if( idName === 'shoes1'){
+            $(".shoes div").removeClass("active")  
+            $(this).addClass("active");
+            $(".shoes_viewpo img").attr("src","img/clothes/shoes_L1.png");
+        }if(idName === 'shoes2'){
+            $(".shoes div").removeClass("active") 
+            $(this).addClass("active");
+            $(".shoes_viewpo img").attr("src","img/clothes/shoes_L2.png");
+        }if(idName === 'shoes3'){
+            $(".shoes div").removeClass("active") 
+            $(this).addClass("active");
+            $(".shoes_viewpo img").attr("src","img/clothes/shoes_L3.png");
+        }if(idName === 'shoes4'){
+            $(".shoes div").removeClass("active") 
+            $(this).addClass("active");
+            $(".shoes_viewpo img").attr("src","img/clothes/shoes_L4.png");
+        }if(idName === 'shoes5'){
+            $(".shoes div").removeClass("active") 
+            $(this).addClass("active");
+            $(".shoes_viewpo img").attr("src","img/clothes/shoes_L5.png");
+        } 
+
+
+
     });
-    $(".shoes2").click(function(){                      
-        $(".shoes_viewpo img").attr("src","img/clothes/shoes_L2.png");       
+
+        $(".clothes_item").on("click", '#clothes_item1, #clothes_item2, #clothes_item3, #clothes_item4, #clothes_item5', function () {
+        let idName = this.getAttribute('id');
+        if( idName === 'clothes_item1'){
+            $(".clothes_item div").removeClass("active")  
+            $(this).addClass("active");
+            $(".clothes_viewpo img").attr("src","img/clothes/clothes_L1.png");
+        }if(idName === 'clothes_item2'){
+            $(".clothes_item div").removeClass("active") 
+            $(this).addClass("active");
+            $(".clothes_viewpo img").attr("src","img/clothes/clothes_L2.png");
+        }if(idName === 'clothes_item3'){
+            $(".clothes_item div").removeClass("active") 
+            $(this).addClass("active");
+            $(".clothes_viewpo img").attr("src","img/clothes/clothes_L3.png");
+        }if(idName === 'clothes_item4'){
+            $(".clothes_item div").removeClass("active") 
+            $(this).addClass("active");
+            $(".clothes_viewpo img").attr("src","img/clothes/clothes_L4.png");
+        }if(idName === 'clothes_item5'){
+            $(".clothes_item div").removeClass("active") 
+            $(this).addClass("active");
+            $(".clothes_viewpo img").attr("src","img/clothes/clothes_L5.png");
+        } 
+
+
+
     });
-    $(".shoes3").click(function(){                      
-        $(".shoes_viewpo img").attr("src","img/clothes/shoes_L3.png");       
-    });
-    $(".shoes4").click(function(){                      
-        $(".shoes_viewpo img").attr("src","img/clothes/shoes_L4.png");       
-    });
-    $(".shoes5").click(function(){                      
-        $(".shoes_viewpo img").attr("src","img/clothes/shoes_L5.png");       
-    });
+
+ 
      
 
         
