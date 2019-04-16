@@ -64,29 +64,45 @@ $(document).ready(function(){
      
 
     $(".shoes").on("click", '#shoes1, #shoes2, #shoes3, #shoes4, #shoes5', function () {
-        let idName = this.getAttribute('id');
-        if( idName === 'shoes1'){
-            $(".shoes div").removeClass("active")  
-            $(this).addClass("active");
-            $(".shoes_viewpo img").attr("src","img/clothes/shoes_L1.png");
-        }if(idName === 'shoes2'){
-            $(".shoes div").removeClass("active") 
-            $(this).addClass("active");
-            $(".shoes_viewpo img").attr("src","img/clothes/shoes_L2.png");
-        }if(idName === 'shoes3'){
-            $(".shoes div").removeClass("active") 
-            $(this).addClass("active");
-            $(".shoes_viewpo img").attr("src","img/clothes/shoes_L3.png");
-        }if(idName === 'shoes4'){
-            $(".shoes div").removeClass("active") 
-            $(this).addClass("active");
-            $(".shoes_viewpo img").attr("src","img/clothes/shoes_L4.png");
-        }if(idName === 'shoes5'){
-            $(".shoes div").removeClass("active") 
-            $(this).addClass("active");
-            $(".shoes_viewpo img").attr("src","img/clothes/shoes_L5.png");
-        } 
-
+            let idName = this.getAttribute('id');
+            if( idName === 'shoes1'){
+                $(".shoes div").removeClass("active")  
+                $(this).addClass("active");
+                $(".shoes_viewpo img").fadeOut(function() {
+                    $(this).attr("src","img/clothes/shoes_L1.png").fadeIn("slow");
+                  });
+ 
+            }if(idName === 'shoes2'){
+                $(".shoes div").removeClass("active") 
+                $(this).addClass("active");
+                $("p#TagWord").text("米奇厚底休閒涼鞋");
+                $(".shoes_viewpo img").fadeOut(function() {
+                    $(this).attr("src","img/clothes/shoes_L2.png").fadeIn("slow");
+                  });
+            }if(idName === 'shoes3'){
+                $(".shoes div").removeClass("active") 
+                $(this).addClass("active");
+                $("p#TagWord").text("米奇飾扣厚底涼鞋");
+                $(".shoes_viewpo img").fadeOut(function() {
+                    $(this).attr("src","img/clothes/shoes_L3.png").fadeIn("slow");
+                  });
+            }if(idName === 'shoes4'){
+                $(".shoes div").removeClass("active") 
+                $(this).addClass("active");
+                $("p#TagWord").text("米奇厚底海灘涼鞋");
+                $(".shoes_viewpo img").fadeOut(function() {
+                    $(this).attr("src","img/clothes/shoes_L4.png").fadeIn("slow");
+                  });
+            }if(idName === 'shoes5'){
+                $(".shoes div").removeClass("active") 
+                $(this).addClass("active");
+                $("p#TagWord").text("米奇寬帶楔型涼鞋");
+                $(".shoes_viewpo img").fadeOut(function() {
+                    $(this).attr("src","img/clothes/shoes_L5.png").fadeIn("slow");
+                  });
+                  
+            } 
+        
 
 
     });
@@ -96,28 +112,65 @@ $(document).ready(function(){
         if( idName === 'clothes_item1'){
             $(".clothes_item div").removeClass("active")  
             $(this).addClass("active");
-            $(".clothes_viewpo img").attr("src","img/clothes/clothes_L1.png");
+            $("p#TagWord2").text("刷色無袖丹寧背心");
+            $(".clothes_viewpo img").fadeOut(function() {
+                    $(this).attr("src","img/clothes/clothes_L1.png").fadeIn("slow");
+                  });
         }if(idName === 'clothes_item2'){
             $(".clothes_item div").removeClass("active") 
             $(this).addClass("active");
-            $(".clothes_viewpo img").attr("src","img/clothes/clothes_L2.png");
+            $("p#TagWord2").text("V 領網眼透視上衣");
+            $(".clothes_viewpo img").fadeOut(function() {
+                    $(this).attr("src","img/clothes/clothes_L2.png").fadeIn("slow");
+                  });
         }if(idName === 'clothes_item3'){
             $(".clothes_item div").removeClass("active") 
             $(this).addClass("active");
-            $(".clothes_viewpo img").attr("src","img/clothes/clothes_L3.png");
+            $("p#TagWord2").text("不規則無袖長上衣");
+            $(".clothes_viewpo img").fadeOut(function() {
+                    $(this).attr("src","img/clothes/clothes_L3.png").fadeIn("slow");
+
+                  });
         }if(idName === 'clothes_item4'){
             $(".clothes_item div").removeClass("active") 
             $(this).addClass("active");
-            $(".clothes_viewpo img").attr("src","img/clothes/clothes_L4.png");
+            $("p#TagWord2").text("刷色無袖丹寧背心");
+            $(".clothes_viewpo img").fadeOut(function() {
+                    $(this).attr("src","img/clothes/clothes_L4.png").fadeIn("slow");
+                  });
         }if(idName === 'clothes_item5'){
             $(".clothes_item div").removeClass("active") 
             $(this).addClass("active");
-            $(".clothes_viewpo img").attr("src","img/clothes/clothes_L5.png");
-        } 
+            $("p#TagWord2").text("不規則無袖長上衣");
+            $(".clothes_viewpo img").fadeOut(function() {
+                    $(this).attr("src","img/clothes/clothes_L5.png").fadeIn("slow");
+                  });
+            } 
 
 
 
     });
+
+    $(".tag div").hover(function(){
+        $(".tag img").css("display", "block");
+        $("p#TagWord").css("display", "block");
+        }, function(){
+            $(".tag img").css("display", "none");
+            $("p#TagWord").css("display", "none");
+        
+       
+    });
+
+        $(".tag2 div").hover(function(){
+        $(".tag2 img").css("display", "block");
+        $("p#TagWord2").css("display", "block");
+        }, function(){
+            $(".tag2 img").css("display", "none");
+            $("p#TagWord2").css("display", "none");
+        
+       
+    });
+
 
  
      
