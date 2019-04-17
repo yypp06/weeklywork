@@ -7,7 +7,7 @@ $(document).ready(function(){
         }, function(){
             $(".clock_yes img").css("display", "none");
             $(".girlcover").css("opacity", "0.4");
-            $(".clock_blue img").css("display", "1.2s linear 0.5s infinite blink");
+            $(".clock_blue img").css("animation", "1.2s linear 0.5s infinite blink");
         
        
     });
@@ -20,8 +20,21 @@ $(document).ready(function(){
             $(".clock_no img").css("display", "none");
             $(".mancover").css("opacity", "0.4");
             $(".clock_blue img").css("display", "block");
+            $(".clock_blue img").css("animation", "1.2s linear 0.5s infinite blink");
         
        
+    });
+
+    $(".yes_cover").click(function(){        
+        $(".main").fadeOut().delay(6000);
+        $(".restPage").css("display","block")
+
+    });
+
+    $(".btn1_1").click(function(){ 
+        $(".main").fadeIn();
+        $(".restPage").css("display","none")
+
     });
 
     function scrollToAnchor(el){
@@ -112,21 +125,27 @@ $(document).ready(function(){
         if( idName === 'clothes_item1'){
             $(".clothes_item div").removeClass("active")  
             $(this).addClass("active");
+            $(".sc3").css("display","block");
             $("p#TagWord2").text("刷色無袖丹寧背心");
+            $("p#TagWord3").text("一字領雪紡褲裝");
             $(".clothes_viewpo img").fadeOut(function() {
                     $(this).attr("src","img/clothes/clothes_L1.png").fadeIn("slow");
                   });
         }if(idName === 'clothes_item2'){
             $(".clothes_item div").removeClass("active") 
             $(this).addClass("active");
+            $(".sc3").css("display","block");
             $("p#TagWord2").text("V 領網眼透視上衣");
+            $("p#TagWord3").text(" 一字領連身牛仔短褲");
             $(".clothes_viewpo img").fadeOut(function() {
                     $(this).attr("src","img/clothes/clothes_L2.png").fadeIn("slow");
                   });
         }if(idName === 'clothes_item3'){
             $(".clothes_item div").removeClass("active") 
             $(this).addClass("active");
+            $(".sc3").css("display","block");
             $("p#TagWord2").text("不規則無袖長上衣");
+            $("p#TagWord3").text("鬆緊包臀牛仔褲");
             $(".clothes_viewpo img").fadeOut(function() {
                     $(this).attr("src","img/clothes/clothes_L3.png").fadeIn("slow");
 
@@ -134,7 +153,9 @@ $(document).ready(function(){
         }if(idName === 'clothes_item4'){
             $(".clothes_item div").removeClass("active") 
             $(this).addClass("active");
+            $(".sc3").css("display","block");
             $("p#TagWord2").text("刷色無袖丹寧背心");
+            $("p#TagWord3").text("波希米亞雪紡洋裝");
             $(".clothes_viewpo img").fadeOut(function() {
                     $(this).attr("src","img/clothes/clothes_L4.png").fadeIn("slow");
                   });
@@ -142,6 +163,7 @@ $(document).ready(function(){
             $(".clothes_item div").removeClass("active") 
             $(this).addClass("active");
             $("p#TagWord2").text("不規則無袖長上衣");
+            $(".sc3").css("display","none");
             $(".clothes_viewpo img").fadeOut(function() {
                     $(this).attr("src","img/clothes/clothes_L5.png").fadeIn("slow");
                   });
@@ -167,6 +189,16 @@ $(document).ready(function(){
         }, function(){
             $(".tag2 img").css("display", "none");
             $("p#TagWord2").css("display", "none");
+        
+       
+    });
+
+        $(".tag3 div").hover(function(){
+        $(".tag3 img").css("display", "block");
+        $("p#TagWord3").css("display", "block");
+        }, function(){
+            $(".tag3 img").css("display", "none");
+            $("p#TagWord3").css("display", "none");
         
        
     });

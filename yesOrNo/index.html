@@ -15,7 +15,8 @@
         width: 100%
         height: auto;
         overflow: hidden;
-        display: none;
+        position: relative;
+        display: none;  
 
     }
     .main img{
@@ -94,7 +95,6 @@
     }
 
     .clock_blue img{
-        animation: blink 1.2s linear;
         animation: 1.2s linear 0.5s infinite blink;
     }
     
@@ -166,6 +166,22 @@
         color: white;
     }
 
+    @-webkit-keyframes move{
+        from {margin-top: 30%;}
+        to {margin-top: 0%;}
+    }
+    @-moz-keyframes move{
+        from {margin-top: 30%;}
+        to {margin-top: 0%;}
+    }
+    @-ms-keyframes move{
+        from {margin-top: 30%;}
+        to {margin-top: 0%;}
+    }
+    @-o-keyframes move{
+        from {margin-top: 30%;}
+        to {margin-top: 0%;}
+    }
 
     .restPage{
         background-image: url(img/yes_bg_02.jpg);
@@ -175,8 +191,11 @@
         background-repeat: no-repeat;
         overflow: hidden;
         background-attachment:fixed;
+        animation: 1 1s linear move;
+        /*display: none;*/
         
     }
+    
     .suitcase{
         background-image: url(img/yes_bg_01.jpg);
         width: 1440px;
@@ -190,6 +209,54 @@
         position: absolute;
         margin: 5% 0 0 63%;
     }
+    .rsc1, .rsc2, .rsc3, .rsc4, .rsc5, .rsc6{
+        background-image: url(img/plus_b.png);
+        background-repeat: no-repeat;
+        width: 137px;
+        height: 33px;
+        position: absolute;
+    } 
+    .rsc1{
+        margin: 22% 0 0 30%;
+    }
+    .rsc2{
+        margin: 39% 0 0 37%;
+    }
+    .rsc3{
+        margin: 32% 0 0 48%;
+    }
+    .rsc4{
+        margin: 36% 0 0 70%;    
+    }
+    .rsc5{
+        margin: 47% 0 0 69%;
+
+    }
+    .rsc6{
+        margin: 42% 0 0 50%;
+    }
+    .rsc1 img, .rsc3 img, .rsc4 img, .rsc5 img, .rsc6 img{
+        margin: -98% 0 0 -10%;
+        position: absolute;
+        display: none;
+    }
+    .rsc2 img{
+        margin: -96% 0 0 -117%;
+        position: absolute;
+        display: none;
+    }
+    .rsc1 p, .rsc3 p, .rsc4 p, .rsc5 p, .rsc6 p{
+        margin: -64% 0 0 29%;
+        position: absolute;
+        display: none;
+    }
+    .rsc2 p{
+        margin: -63% 0 0 -76%;
+        position: absolute;
+        display: none;
+    }
+
+
     .tips {   
         background-image: url(img/yes_topic02.png);
         background-color: rgba(107, 214, 255, 0.45);
@@ -277,23 +344,21 @@
         background-position : 50% 85%;
         
     }
-
+    .btn div{
+        position: fixed;
+        width: 200px;
+        height: 200px;
+    }
      
     .btn1{
         background: url(img/yes_tab_01_1.png);
-        width: 200px;
         background-repeat: no-repeat;
-        height: 200px;
-        position: fixed;
         top: 5%;
         left: 90%;
     }
     .btn1_1{
         background: url(img/yes_tab_01.png);
-        width: 200px;
         background-repeat: no-repeat;
-        height: 200px;
-        position: fixed;
         top: 5%;
         left: 90%;
     }
@@ -302,55 +367,37 @@
     }
     .btn2 {
         background: url(img/yes_tab_02_1.png);
-        width: 200px;
         background-repeat: no-repeat;
-        height: 200px;
-        position: fixed;
         top: 17%;
         left: 90%;
     }
     .btn2_2 {
         background: url(img/yes_tab_02.png);
-        width: 200px;
         background-repeat: no-repeat;
-        height: 200px;
-        position: fixed;
         top: 17%;
         left: 90%;
     }
     .btn3 {
         background: url(img/yes_tab_03_1.png);
-        width: 200px;
         background-repeat: no-repeat;
-        height: 200px;
-        position: fixed;
         top: 29%;
         left: 90%;
     }
     .btn3_3 {
         background: url(img/yes_tab_03.png);
-        width: 200px;
         background-repeat: no-repeat;
-        height: 200px;
-        position: fixed;
         top: 29%;
         left: 90%;
     }
     .btn4 {
         background: url(img/yes_tab_04_1.png);
-        width: 200px;
         background-repeat: no-repeat;
-        height: 200px;
-        position: fixed;
         top: 41%;
         left: 90%;
     }
     .btn4_4 {
         background: url(img/yes_tab_04.png);
-        width: 200px;
         background-repeat: no-repeat;
-        height: 200px;
-        position: fixed;
         top: 41%;
         left: 90%;
     }
@@ -399,7 +446,7 @@
         margin: -11% 0 0 20%;
     }
     .clothes_viewpo img{
-        margin: 1% 0 0 -22%; 
+        margin: -6% 0 0 -22%; 
 
     }
     .active img {
@@ -448,6 +495,15 @@
     .sc3 img{
         position: absolute;
         margin: -97% 0 0 -121%;
+        display: none;
+    }
+    .sc3 p{
+        margin: -64% 0 0 -90%;
+        position: absolute;
+        width: 300px;
+        display: none;
+        text-align: left;
+
     }
 
 
@@ -474,62 +530,69 @@
             </p>
         </div>
     </div>
-    <div class="restPage">
-        <div class="suitcase">
-            <div class="adVideo"><iframe width="325" height="183" src="https://www.youtube.com/embed/IZ58M1sAaWY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> 
-            <div class="manager"><img src="img/yes_circle168x168_01.png"></div>
-            <div class="picnic"><img src="img/yes_circle168x168_02.png"></div>
-            <div class="orange"><img src="img/yes_circle168x168_03.png"></div>
-            <div class="camera"><img src="img/yes_circle168x168_04.png"></div>
-        </div>
-        <div class="tips"> </div>
-        <div class="clothes">
-            <div class="contain">
-                <div class="shoes_viewpo"><img src="img/clothes/shoes_L1.png"></div>
-                <div class="clothes_viewpo"><img src="img/clothes/clothes_L1.png"></div>
-            </div>
-            <div class="shoes">
-                <div id="shoes1" class="active"><img src="img/clothes/shoes_s1.png"></div>
-                <div id="shoes2"><img src="img/clothes/shoes_s2.png"></div>
-                <div id="shoes3"><img src="img/clothes/shoes_s3.png"></div>
-                <div id="shoes4"><img src="img/clothes/shoes_s4.png"></div>
-                <div id="shoes5"><img src="img/clothes/shoes_s5.png"></div>
-            </div>
-            <div class="clothes_item">
-                <div id="clothes_item1" class="active"><img src="img/clothes/clothes_s1.png"></div>
-                <div id="clothes_item2"><img src="img/clothes/clothes_s2.png"></div>
-                <div id="clothes_item3"><img src="img/clothes/clothes_s3.png"></div>
-                <div id="clothes_item4"><img src="img/clothes/clothes_s4.png"></div>
-                <div id="clothes_item5"><img src="img/clothes/clothes_s5.png"></div>
-            </div>
-            <div class="tag">
-                <div class="sc1">
-                    <img src="img/frame.png">
-                    <p id="TagWord">海軍風米奇懶人拖鞋</p>
+        <div class="restPage">
+            <div class="suitcase">
+                <div class="rsc1"><img src="img/frame.png"><p>20吋行李箱</p></div>
+                <div class="rsc2"><img src="img/frame2.png"><p>阿愣行動充</p></div>
+                <div class="rsc3"><img src="img/frame.png"><p>輕巧型吹風機</p></div>
+                <div class="rsc4"><img src="img/frame.png"><p>真皮隨身包</p></div>
+                <div class="rsc5"><img src="img/frame.png"><p>LOMO 相機</p></div>
+                <div class="rsc6"><img src="img/frame.png"><p>太陽眼鏡</p></div>
+                <div class="adVideo"><iframe width="325" height="183" src="https://www.youtube.com/embed/IZ58M1sAaWY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> 
+                <div class="manager"><img src="img/yes_circle168x168_01.png"></div>
+                <div class="picnic"><img src="img/yes_circle168x168_02.png"></div>
+                <div class="orange"><img src="img/yes_circle168x168_03.png"></div>
+                <div class="camera"><img src="img/yes_circle168x168_04.png"></div>
+                <div class="btn">
+                    <div class="btn1"> </div>
+                    <div class="btn1_1"> </div>
+                    <div class="btn2"> </div>
+                    <div class="btn2_2"> </div>
+                    <div class="btn3"> </div>
+                    <div class="btn3_3"> </div>
+                    <div class="btn4"> </div>
+                    <div class="btn4_4"> </div>
                 </div>
             </div>
-            <div class="tag2"> 
-                <div class="sc2">
-                    <img src="img/frame.png">
-                    <p id="TagWord2">刷色無袖丹寧背心</p>
+            <div class="tips"> </div>
+            <div class="clothes">
+                <div class="contain">
+                    <div class="shoes_viewpo"><img src="img/clothes/shoes_L1.png"></div>
+                    <div class="clothes_viewpo"><img src="img/clothes/clothes_L1.png"></div>
+                </div>
+                <div class="shoes">
+                    <div id="shoes1" class="active"><img src="img/clothes/shoes_s1.png"></div>
+                    <div id="shoes2"><img src="img/clothes/shoes_s2.png"></div>
+                    <div id="shoes3"><img src="img/clothes/shoes_s3.png"></div>
+                    <div id="shoes4"><img src="img/clothes/shoes_s4.png"></div>
+                    <div id="shoes5"><img src="img/clothes/shoes_s5.png"></div>
+                </div>
+                <div class="clothes_item">
+                    <div id="clothes_item1" class="active"><img src="img/clothes/clothes_s1.png"></div>
+                    <div id="clothes_item2"><img src="img/clothes/clothes_s2.png"></div>
+                    <div id="clothes_item3"><img src="img/clothes/clothes_s3.png"></div>
+                    <div id="clothes_item4"><img src="img/clothes/clothes_s4.png"></div>
+                    <div id="clothes_item5"><img src="img/clothes/clothes_s5.png"></div>
+                </div>
+                <div class="tag">
+                    <div class="sc1">
+                        <img src="img/frame.png">
+                        <p id="TagWord">海軍風米奇懶人拖鞋</p>
+                    </div>
+                </div>
+                <div class="tag2"> 
+                    <div class="sc2">
+                        <img src="img/frame.png">
+                        <p id="TagWord2">刷色無袖丹寧背心</p>
+                    </div>
+                </div>
+                <div class="tag3">
+                    <div class="sc3">
+                        <img src="img/frame2.png">
+                        <p id="TagWord3">一字領雪紡褲裝</p>
+                    </div>
                 </div>
             </div>
-            <div class="tag3">
-                <div class="sc3">
-                    <img src="img/frame2.png">
-                </div>
-
-            </div>
-        </div>
-        <div class="btm">
-            <span class="btn1"> </span>
-            <span class="btn1_1"> </span>
-            <span class="btn2"> </span>
-            <span class="btn2_2"> </span>
-            <span class="btn3"> </span>
-            <span class="btn3_3"> </span>
-            <span class="btn4"> </span>
-            <span class="btn4_4"> </span>
         </div>
     </div>
     <div class="workPage"></div>
