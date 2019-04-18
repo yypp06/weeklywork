@@ -31,6 +31,44 @@ $(document).ready(function(){
 
     });
 
+    $("div.rsc1").hover(function(){
+        $(".rsc1_1").css("display", "block");
+        }, function(){
+            $(".rsc1_1").css("display", "none");
+       
+    });
+    $("div.rsc2").hover(function(){
+        $(".rsc2_1").css("display", "block");
+        }, function(){
+            $(".rsc2_1").css("display", "none");
+       
+    });
+    $("div.rsc3").hover(function(){
+        $(".rsc3_1").css("display", "block");
+        }, function(){
+            $(".rsc3_1").css("display", "none");
+       
+    });
+    $("div.rsc4").hover(function(){
+        $(".rsc4_1").css("display", "block");
+        }, function(){
+            $(".rsc4_1").css("display", "none");
+       
+    });
+    $("div.rsc5").hover(function(){
+        $(".rsc5_1").css("display", "block");
+        }, function(){
+            $(".rsc5_1").css("display", "none");
+       
+    });
+    $(".rsc6").hover(function(){
+        $(".rsc6_1").css("display", "block");
+        }, function(){
+            $(".rsc6_1").css("display", "none");
+       
+    });
+
+
     $(".btn1_1").click(function(){ 
         $(".main").fadeIn();
         $(".restPage").css("display","none")
