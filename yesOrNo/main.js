@@ -30,6 +30,11 @@ $(document).ready(function(){
         $(".restPage").css("display","block")
 
     });
+        $(".no_cover").click(function(){        
+        $(".main").fadeOut().delay(6000);
+        $(".workPage").css("display","block")
+
+    });
 
     $("div.rsc1").hover(function(){
         $(".rsc1_1").css("display", "block");
@@ -74,6 +79,11 @@ $(document).ready(function(){
         $(".restPage").css("display","none")
 
     });
+    $(".office_btn1_1").click(function(){ 
+        $(".main").fadeIn();
+        $(".workPage").css("display","none")
+
+    });
 
     function scrollToAnchor(el){
         var top = $(el).offset().top;
@@ -96,6 +106,31 @@ $(document).ready(function(){
                 $('.btn2_2').show();
                 $('.restPage').css('background-position', '50% 206%');
                 $('.restPage').css({'background-attachment':'scroll'});
+                
+            }
+     });
+
+    function scrollToAnchor(el){
+    var top = $(el).offset().top;
+    $('html,body').animate({scrollTop: top},'slow');
+    }
+    $(window).scroll(function () {
+        var thisTop = $(this).scrollTop();
+        var top1 = $('div .office').offset().top;
+        var top2 = $('.table').offset().top - 470;
+         
+        if(thisTop > top1 && thisTop < top2) {
+            $('.office_btn2_2').hide();
+            $('.office_btn3_3').show();
+            $('.workPage').css('background-position', 'center');
+            $('.workPage').css({'background-attachment':'fixed'});
+
+        }
+            else if(thisTop > top2) {
+                $('.office_btn3_3').hide();
+                $('.office_btn2_2').show();
+                $('.workPage').css('background-position', '50% 79%');
+                $('.workPage').css({'background-attachment':'scroll'});
                 
             }
      });
