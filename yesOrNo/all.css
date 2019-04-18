@@ -548,7 +548,7 @@ body {
 .table{
     background-image: url(img/no_bg_03.jpg);
     width: 100%;
-    height: 672px;
+    height: 834px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -618,3 +618,160 @@ body {
     top: 41%;
     left: 90%;
 }
+.toy1, .toy2, .toy3, .toy4, .toy5 {
+    background-image: url(img/plus_b.png);
+    background-repeat: no-repeat;
+    width: 137px;
+    height: 33px;
+    position: absolute;
+
+} 
+.toy1_1, .toy2_1, .toy3_1, .toy4_1, .toy5_1 {
+    background-image: url(img/frame.png);
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 300px;
+    position: absolute;
+    display: none;
+    pointer-events: none;
+} 
+.toy1{
+    margin: 27% 0 0 52%;
+}
+.toy1_1{
+    margin: 18% 0 0 51%;
+}
+.toy2{
+    margin: 42% 0 0 34%;
+}
+.toy2_1{
+    margin: 33% 0 0 33%;
+}
+.toy3{
+    margin: 54% 0 0 39%;
+}
+.toy3_1{
+    margin: 45% 0 0 38%;
+}
+.toy4{
+    margin: 41% 0 0 62%;
+}
+.toy4_1{
+    margin: 32% 0 0 61%;
+}    
+.toy5{
+    margin: 60% 0 0 52%;
+}
+.toy5_1{
+    margin: 51% 0 0 51%;
+}
+.toy1_1 p, .toy2_1 p, .toy2_1 p, .toy3_1 p, .toy4_1 p, .toy5_1 p {
+    margin: 19% 0 0 17%;
+}
+
+.desk{
+    background-image: url(img/bg1.png);
+    width: 1300px;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-position: 80% 20%;
+}
+.desk_item1{
+    background-image: url(img/office/alien.png);
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: 80% 20%;
+    position: absolute;
+    margin: 0% 0 0 8%;
+}
+.desk_item2{
+    background-image: url(img/office/apple.png);
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: 80% 20%;
+    position: absolute;
+    margin: 38% 0 0 57%;
+}
+.desk_item3{
+    background-image: url(img/office/car.png);
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: 80% 20%;
+    position: absolute;
+    margin: 25% 0 0 55%;
+}
+.desk_item4{
+    background-image: url(img/office/coffee.png);
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: 80% 20%;
+    position: absolute;
+    margin: 20% 0 0 71%;
+
+}
+.desk_item5{
+    background-image: url(img/office/fish.png);
+    width: 396px;
+    height: 410px;
+    background-repeat: no-repeat;
+    background-position: 80% 20%;
+    position: absolute;
+    margin: -3% 0 0 65%;
+
+}
+.desk_item6{
+    background-image: url(img/office/Glasses.png);
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: 80% 20%;
+    position: absolute;
+    margin: 28% 0 0 68%;
+}
+.desk_item7{
+    background-image: url(img/office/letter.png);
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: 80% 20%;
+    position: absolute;
+    margin: 14% 0 0 10%;
+
+}
+.desk_item8{
+    background-image: url(img/office/note.png);
+    width: 530px;
+    height: 361px;
+    background-repeat: no-repeat;
+    background-position: 80% 20%;
+    position: absolute;
+    margin: 32% 0 0 29%;
+}
+.desk_item9{
+    background-image: url(img/office/notebook.png);
+    width: 568px;
+    height: 390px;
+    background-repeat: no-repeat;
+    background-position: 80% 20%;
+    position: absolute;
+    margin: 3% 0 0 27%;
+}
+.desk_item10{
+    background-image: url(img/office/phone.png);
+    width: 308px;
+    height: 355px;
+    background-repeat: no-repeat;
+    background-position: 80% 20%;
+    position: absolute;
+    margin: 27% 0 0 9%;
+
+}
+
+
+
+
+
