@@ -73,7 +73,7 @@ $(document).ready(function(){
        
     });
 
-    $("div.toy1").hover(function(){
+    $(".toy1").hover(function(){
         $(".toy1_1").css("display", "block");
         }, function(){
             $(".toy1_1").css("display", "none");
@@ -155,13 +155,33 @@ $(document).ready(function(){
             $('.office_btn3_3').show();
             $('.workPage').css('background-position', 'center');
             $('.workPage').css({'background-attachment':'fixed'});
+            $('.desk_item1').css('animation','none');
+            $('.desk_item2').css('animation','none');
+            $('.desk_item3').css('animation','none');
+            $('.desk_item4').css('animation','none');
+            $('.desk_item5').css('animation','none');
+            $('.desk_item6').css('animation','none');
+            $('.desk_item7').css('animation','none');
+            $('.desk_item8').css('animation','none');
+            $('.desk_item9').css('animation','none');
+            $('.desk_item10').css('animation','none');
 
         }
             else if(thisTop > top2) {
                 $('.office_btn3_3').hide();
                 $('.office_btn2_2').show();
-                $('.workPage').css('background-position', '50% 69%');
+                $('.workPage').css('background-position', '50% 67%');
                 $('.workPage').css({'background-attachment':'scroll'});
+                $('.desk_item1').css('animation','1 0.5s linear alien');
+                $('.desk_item2').css('animation','1 0.5s linear apple');
+                $('.desk_item3').css('animation','1 0.5s linear car');
+                $('.desk_item4').css('animation','1 0.5s linear coffee');
+                $('.desk_item5').css('animation','1 0.5s linear fish');
+                $('.desk_item6').css('animation','1 0.5s linear Glasses');
+                $('.desk_item7').css('animation','1 0.5s linear letter');
+                $('.desk_item8').css('animation','1 0.5s linear note');
+                $('.desk_item9').css('animation','1 0.5s linear notebook');
+                $('.desk_item10').css('animation','1 0.5s linear phone');
                 
             }
      });
@@ -318,12 +338,7 @@ $(document).ready(function(){
        
     });
 
-
  
-     
-
-        
-
 
 
 

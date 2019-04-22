@@ -1,5 +1,3 @@
-
-
 body {
     margin: 0 auto;
 }
@@ -523,12 +521,11 @@ body {
      
 }
 .office{
-    background-image: url(img/no_bg_01.jpg);
-    width: 1440px;
-    height: 1030px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url(img/no_bg_01.jpg) no-repeat center center;
+    min-width: 1300px;
+    height: 1166px;
+    width: 100%;
+     
      
 }
 
@@ -542,6 +539,17 @@ body {
     background-position: center;
     margin: 0 0 0 -18%;
      
+}
+.office_tag{
+    background: no-repeat center center;
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 455px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
 }
 
 
@@ -636,31 +644,36 @@ body {
     pointer-events: none;
 } 
 .toy1{
-    margin: 27% 0 0 52%;
+    top: 31px;
+    left: 419px;
 }
 .toy1_1{
     margin: 18% 0 0 51%;
 }
 .toy2{
-    margin: 42% 0 0 34%;
+    top: 278px;
+    left: 153px;
 }
 .toy2_1{
     margin: 33% 0 0 33%;
 }
 .toy3{
-    margin: 54% 0 0 39%;
+    top: 536px;
+    left: 154px;
 }
 .toy3_1{
     margin: 45% 0 0 38%;
 }
 .toy4{
-    margin: 41% 0 0 62%;
+    top: 259px;
+    left: 593px;
 }
 .toy4_1{
     margin: 32% 0 0 61%;
 }    
 .toy5{
-    margin: 60% 0 0 52%;
+    top: 566px;
+    left: 431px;
 }
 .toy5_1{
     margin: 51% 0 0 51%;
@@ -676,6 +689,25 @@ body {
     background-repeat: no-repeat;
     background-position: 80% 20%;
 }
+
+@-webkit-keyframes alien{
+    from {margin: -7% 0% 0 2%;}
+    to {margin: 0% 0 0 8%;}
+}
+@-moz-keyframes alien{
+    from {margin: -7% 0% 0 2%;}
+    to {margin: 0% 0 0 8%;}
+}
+@-ms-keyframes alien{
+    from {margin: -7% 0% 0 2%;}
+    to {margin: 0% 0 0 8%;}
+}
+@-o-keyframes alien{
+    from {margin: -7% 0% 0 2%;}
+    to {margin: 0% 0 0 8%;}
+}
+
+
 .desk_item1{
     background-image: url(img/office/alien.png);
     width: 300px;
@@ -684,7 +716,26 @@ body {
     background-position: 80% 20%;
     position: absolute;
     margin: 0% 0 0 8%;
+    animation: none;
 }
+
+@-webkit-keyframes apple{
+    from {margin: 49% 0 0 63%;}
+    to {margin: 38% 0 0 57%;}
+}
+@-moz-keyframes apple{
+    from {margin: 49% 0 0 63%;}
+    to {margin: 38% 0 0 57%;}
+}
+@-ms-keyframes apple{
+    from {margin: 49% 0 0 63%;}
+    to {margin: 38% 0 0 57%;}
+}
+@-o-keyframes apple{
+    from {margin: 49% 0 0 63%;}
+    to {margin: 38% 0 0 57%;}
+}
+
 .desk_item2{
     background-image: url(img/office/apple.png);
     width: 300px;
@@ -693,7 +744,26 @@ body {
     background-position: 80% 20%;
     position: absolute;
     margin: 38% 0 0 57%;
+    animation: none;
 }
+
+@-webkit-keyframes car{
+    from {margin: 37% 0 0 61%;}
+    to {margin: 25% 0 0 55%;}
+}
+@-moz-keyframes car{
+    from {margin: 37% 0 0 61%;}
+    to {margin: 25% 0 0 55%;}
+}
+@-ms-keyframes car{
+    from {margin: 37% 0 0 61%;}
+    to {margin: 25% 0 0 55%;}
+}
+@-o-keyframes car{
+    from {margin: 37% 0 0 61%;}
+    to {margin: 25% 0 0 55%;}
+}
+
 .desk_item3{
     background-image: url(img/office/car.png);
     width: 300px;
@@ -702,7 +772,26 @@ body {
     background-position: 80% 20%;
     position: absolute;
     margin: 25% 0 0 55%;
+    animation: none;
 }
+
+@-webkit-keyframes coffee{
+    from {margin: 37% 0 0 80%;}
+    to {margin: 20% 0 0 71%;}
+}
+@-moz-keyframes coffee{
+    from {margin: 37% 0 0 80%;}
+    to {margin: 20% 0 0 71%;}
+}
+@-ms-keyframes coffee{
+    from {margin: 37% 0 0 80%;}
+    to {margin: 20% 0 0 71%;}
+}
+@-o-keyframes coffee{
+    from {margin: 37% 0 0 80%;}
+    to {margin: 20% 0 0 71%;}
+}
+
 .desk_item4{
     background-image: url(img/office/coffee.png);
     width: 300px;
@@ -711,8 +800,27 @@ body {
     background-position: 80% 20%;
     position: absolute;
     margin: 20% 0 0 71%;
+    animation: none;
 
 }
+
+@-webkit-keyframes fish{
+    from {margin: -20% 0 0 78%;}
+    to {margin: -3% 0 0 65%;}
+}
+@-moz-keyframes fish{
+    from {margin: -20% 0 0 78%;}
+    to {margin: -3% 0 0 65%;}
+}
+@-ms-keyframes fish{
+    from {margin: -20% 0 0 78%;}
+    to {margin: -3% 0 0 65%;}
+}
+@-o-keyframes fish{
+    from {margin: -20% 0 0 78%;}
+    to {margin: -3% 0 0 65%;}
+}
+
 .desk_item5{
     background-image: url(img/office/fish.png);
     width: 396px;
@@ -721,8 +829,27 @@ body {
     background-position: 80% 20%;
     position: absolute;
     margin: -3% 0 0 65%;
+    animation: none;
 
 }
+
+@-webkit-keyframes Glasses{
+    from {margin: 28% 0 0 80%;}
+    to {margin: 28% 0 0 68%;}
+}
+@-moz-keyframes Glasses{
+    from {margin: 28% 0 0 80%;}
+    to {margin: 28% 0 0 68%;}
+}
+@-ms-keyframes Glasses{
+    from {margin: 28% 0 0 80%;}
+    to {margin: 28% 0 0 68%;}
+}
+@-o-keyframes Glasses{
+    from {margin: 28% 0 0 80%;}
+    to {margin: 28% 0 0 68%;}
+}
+
 .desk_item6{
     background-image: url(img/office/Glasses.png);
     width: 300px;
@@ -731,7 +858,26 @@ body {
     background-position: 80% 20%;
     position: absolute;
     margin: 28% 0 0 68%;
+    animation: none;
 }
+
+@-webkit-keyframes letter{
+    from {margin: 7% 0 0 -6%;}
+    to {margin: 14% 0 0 10%;}
+}
+@-moz-keyframes letter{
+    from {margin: 7% 0 0 -6%;}
+    to {margin: 14% 0 0 10%;}
+}
+@-ms-keyframes letter{
+    from {margin: 7% 0 0 -6%;}
+    to {margin: 14% 0 0 10%;}
+}
+@-o-keyframes letter{
+    from {margin: 7% 0 0 -6%;}
+    to {margin: 14% 0 0 10%;}
+}
+
 .desk_item7{
     background-image: url(img/office/letter.png);
     width: 300px;
@@ -740,8 +886,27 @@ body {
     background-position: 80% 20%;
     position: absolute;
     margin: 14% 0 0 10%;
+    animation: none;
 
 }
+
+@-webkit-keyframes note{
+    from {margin: 50% 0 0 29%;}
+    to {margin: 32% 0 0 29%;}
+}
+@-moz-keyframes note{
+    from {margin: 50% 0 0 29%;}
+    to {margin: 32% 0 0 29%;}
+}
+@-ms-keyframes note{
+    from {margin: 50% 0 0 29%;}
+    to {margin: 32% 0 0 29%;}
+}
+@-o-keyframes note{
+    from {margin: 50% 0 0 29%;}
+    to {margin: 32% 0 0 29%;}
+}
+
 .desk_item8{
     background-image: url(img/office/note.png);
     width: 530px;
@@ -750,7 +915,26 @@ body {
     background-position: 80% 20%;
     position: absolute;
     margin: 32% 0 0 29%;
+    animation: none;
 }
+
+@-webkit-keyframes notebook{
+    from {margin: -19% 0 0 27%;}
+    to {margin: 3% 0 0 27%;}
+}
+@-moz-keyframes notebook{
+    from {margin: -19% 0 0 27%;}
+    to {margin: 3% 0 0 27%;}
+}
+@-ms-keyframes notebook{
+    from {margin: -19% 0 0 27%;}
+    to {margin: 3% 0 0 27%;}
+}
+@-o-keyframes notebook{
+    from {margin: -19% 0 0 27%;}
+    to {margin: 3% 0 0 27%;}
+}
+
 .desk_item9{
     background-image: url(img/office/notebook.png);
     width: 568px;
@@ -759,7 +943,26 @@ body {
     background-position: 80% 20%;
     position: absolute;
     margin: 3% 0 0 27%;
+    animation: none;
 }
+
+@-webkit-keyframes phone{
+    from {margin: 53% 0 0 1%;}
+    to {margin: 27% 0 0 9%;}
+}
+@-moz-keyframes phone{
+    from {margin: 53% 0 0 1%;}
+    to {margin: 27% 0 0 9%;}
+}
+@-ms-keyframes phone{
+    from {margin: 53% 0 0 1%;}
+    to {margin: 27% 0 0 9%;}
+}
+@-o-keyframes phone{
+    from {margin: 53% 0 0 1%;}
+    to {margin: 27% 0 0 9%;}
+}
+
 .desk_item10{
     background-image: url(img/office/phone.png);
     width: 308px;
@@ -768,10 +971,6 @@ body {
     background-position: 80% 20%;
     position: absolute;
     margin: 27% 0 0 9%;
+    animation: none;
 
 }
-
-
-
-
-
