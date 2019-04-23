@@ -26,12 +26,12 @@ $(document).ready(function(){
     });
 
     $(".yes_cover").click(function(){        
-        $(".main").fadeOut().delay(6000);
+        $(".main").fadeOut();
         $(".restPage").css("display","block")
 
     });
         $(".no_cover").click(function(){        
-        $(".main").fadeOut().delay(6000);
+        $(".main").fadeOut();
         $(".workPage").css("display","block")
 
     });
@@ -106,12 +106,25 @@ $(document).ready(function(){
 
 
     $(".btn1_1").click(function(){ 
-        $(".main").fadeIn();
+        $(".main").fadeIn('fast');
         $(".restPage").css("display","none")
 
     });
+
+    $(".btn4_4").click(function(){ 
+        $(".workPage").fadeIn('fast');
+        $(".restPage").css("display","none")
+
+    });
+
     $(".office_btn1_1").click(function(){ 
-        $(".main").fadeIn();
+        $(".main").fadeIn('fast');
+        $(".workPage").css("display","none")
+
+    });
+
+    $(".office_btn4_4").click(function(){ 
+        $(".restPage").fadeIn('fast');
         $(".workPage").css("display","none")
 
     });
@@ -135,7 +148,7 @@ $(document).ready(function(){
             else if(thisTop > top2) {
                 $('.btn3_3').hide();
                 $('.btn2_2').show();
-                $('.restPage').css('background-position', '50% 206%');
+                $('.restPage').css('background-position', '50% 244%');
                 $('.restPage').css({'background-attachment':'scroll'});
                 
             }
@@ -153,6 +166,7 @@ $(document).ready(function(){
         if(thisTop > top1 && thisTop < top2) {
             $('.office_btn2_2').hide();
             $('.office_btn3_3').show();
+            $('.desk').hide();
             $('.workPage').css('background-position', 'center');
             $('.workPage').css({'background-attachment':'fixed'});
             $('.desk_item1').css('animation','none');
@@ -170,18 +184,19 @@ $(document).ready(function(){
             else if(thisTop > top2) {
                 $('.office_btn3_3').hide();
                 $('.office_btn2_2').show();
-                $('.workPage').css('background-position', '50% 67%');
+                $('.desk').fadeIn();
+                $('.workPage').css('background-position', '50% 77%');
                 $('.workPage').css({'background-attachment':'scroll'});
-                $('.desk_item1').css('animation','1 0.5s linear alien');
-                $('.desk_item2').css('animation','1 0.5s linear apple');
-                $('.desk_item3').css('animation','1 0.5s linear car');
-                $('.desk_item4').css('animation','1 0.5s linear coffee');
-                $('.desk_item5').css('animation','1 0.5s linear fish');
-                $('.desk_item6').css('animation','1 0.5s linear Glasses');
-                $('.desk_item7').css('animation','1 0.5s linear letter');
-                $('.desk_item8').css('animation','1 0.5s linear note');
-                $('.desk_item9').css('animation','1 0.5s linear notebook');
-                $('.desk_item10').css('animation','1 0.5s linear phone');
+                $('.desk_item1').css('animation','1 0.7s linear alien');
+                $('.desk_item2').css('animation','1 0.7s linear apple');
+                $('.desk_item3').css('animation','1 0.7s linear car');
+                $('.desk_item4').css('animation','1 0.7s linear coffee');
+                $('.desk_item5').css('animation','1 0.7s linear fish');
+                $('.desk_item6').css('animation','1 0.7s linear Glasses');
+                $('.desk_item7').css('animation','1 0.7s linear letter');
+                $('.desk_item8').css('animation','1 0.7s linear note');
+                $('.desk_item9').css('animation','1 0.7s linear notebook');
+                $('.desk_item10').css('animation','1 0.7s linear phone');
                 
             }
      });
